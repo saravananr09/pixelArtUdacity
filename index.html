@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pixel Art Maker</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="media-body">
+
+ <div>
+    <marquee class="jumbotron" direction="right" width = "1325" height ="100" behavior="alternate">
+      <h1>Pixel Art Maker</h1>
+    </marquee>
+ </div>
+ <div class="container-fluid">
+  <div class="row">
+   <div class="jumbotron col-sm-6">
+    <h2 class="font-italic text-info">Choose Grid Size</h2>
+     <form id="sizePicker" class="table-hover">
+        <label class="col-form-label-sm font-weight-bold">Grid Height  <br>
+             <input type="number" class="form-control" id="input_height" name="height" min="5" value="10" max="60" required> 
+        </label><br>
+        <label class="col-form-label-sm font-weight-bold font">Grid Width <br>
+             <input type="number" class="form-control"  id="input_width" name="width" min="5" value="10" max="60" required>
+        </label><br>
+             <input type="submit" class="btn btn-primary font-weight-bold" > <br>
+    </form>
+   </div>
+  </div>  
+ </div>  
+
+ <div class="container-fluid  pull-right a1" >
+  <div class="row offset-6 ">
+   <div class="jumbotron col-md-12 ">
+    <h2 class="text-info">Pick A Color</h2>
+       <input type="color" id="colorPicker" value="#">
+    <h2 class="text-info">Design Canvas</h2>
+       <table id="pixel_canvas"></table>
+   </div>
+  </div>
+ </div>  
+    <script src="jquery.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+</html>
